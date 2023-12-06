@@ -35,7 +35,7 @@ Addressing overfitting in SVD predictions requires further exploration and refin
 The dataset comprises 45,993 observations of user-item interactions, involving 714 unique articles and 5,148 users. The median number of times an article is viewed is 25, indicating moderate engagement. Notably, half of the users have viewed three articles or fewer.
 
 <p align="center">
-  <img src="https://github.com/TheAnalyticCraft/IBM-Recommendation-Engine-Project/blob/main/user_item_visualizations.png" width="750" title="charts">
+  <img src="https://github.com/TheAnalyticCraft/IBM-Recommendation-Engine-Project/blob/main/static/user_item_viz.png" width="750" title="charts">
 </p>
 
 The article community file contains a total of 1,051 unique article titles. Among these, 227 out of the 714 viewed articles are not included in the article community file. This results in a combined total of 1,328 articles, including those that have been viewed and those that have not been seen by users.
@@ -57,7 +57,6 @@ However, this binary representation may not always capture the full spectrum of 
 - `Recommendations_with_IBM.html`: HTML version of the Jupyter notebook.
 - `recommender.py`: Builds the recommender class.
 - `recommender_functions.py`: Contains functions for recommender class.
-- `user_item_visualizations.png`: Visualization chart.
 - `project_test.py`: Contains grading functions. 
 - `top_5.p`, `top_10.p`, `user_item_matrix.p`: Udacity files.
 
