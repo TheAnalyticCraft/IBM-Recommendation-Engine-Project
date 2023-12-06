@@ -10,13 +10,13 @@ This project is structured into separate sections, each representing a step in t
 - Collaborative Filtering: Recommendations are generated based on user similarity.
 - Content-Based Recommendations: Recommendations rely on content similarity between articles.
 
-A detailed walkthrough of the steps is described in the notebook or HTML file. Udacity provided an outline for which functions need to be written to perform the different tasks in this recommendation exercise, as shown in sections:
+A detailed walkthrough of the steps is described in the `Recommendations_with_IBM jupyter` notebook or HTML. Udacity provided an outline for which functions need to be written to perform the different tasks in this recommendation exercise, as shown in sections:
 
 - II. Rank-based  
 - III. User-User Collaborative - Filtering  
-- IV. Content-Based Filtering (optional)  
+- IV. Content-Based Filtering  
 
-At the end of section IV, a demonstration of three combined approaches is presented to construct a basic recommendation system, addressing various user scenarios:
+At the end of section IV, a demonstration of three combined approaches is presented to construct a basic recommendation engine, addressing various user scenarios:
 
 - New Users: Recommendations prioritize popular (most viewed) articles.  
 - Less-Engaged Users (with 5 or fewer interactions): Content-based articles are recommended, sorted by popularity.  
@@ -34,6 +34,8 @@ Addressing overfitting in SVD predictions requires further exploration and refin
 
 The dataset comprises 45,993 observations of user-item interactions, involving 714 unique articles and 5,148 users. The median number of times an article is viewed is 25, indicating moderate engagement. Notably, half of the users have viewed three articles or fewer.
 
+(https://github.com/TheAnalyticCraft/IBM-Recommendation-Engine-Project/blob/main/user_item_visualizations.png)  
+
 The article community file contains a total of 1,051 unique article titles. Among these, 227 out of the 714 viewed articles are not included in the article community file. This results in a combined total of 1,328 articles, including those that have been viewed and those that have not been seen by users.
 
 In the absence of explicit ratings, the data is represented in a binary format, where 1 signifies that an article has been viewed, regardless of the frequency of views, and 0 indicates otherwise. It's important to note that a 0 does not necessarily imply disinterest, and multiple views can reflect various user behaviors, from simple clicks to a strong liking for the article.
@@ -47,14 +49,14 @@ However, this binary representation may not always capture the full spectrum of 
 - `/data/articles_community.csv`: Catalog of articles.
 - `/data/user-item-interaction.csv`: User views of articles.
 
-**File Descriptions**
+**File Description**
 
-- `Recommendations_with_IBM.ipynb`: Jupyter notebook containing the exercises.
+- `Recommendations_with_IBM.ipynb`: Jupyter notebook containing the Udacity exercises.
 - `Recommendations_with_IBM.html`: HTML version of the Jupyter notebook.
 - `recommender.py`: Builds the recommender class.
-- `recommender_functions.py`: Contains functions by recommender class.
+- `recommender_functions.py`: Contains functions for recommender class.
 - `project_test.py`: Contains grading functions. 
-- `top_5.p`, `top_10.p`, `user_item_matrix.p`: Provided by Udacity.
+- `top_5.p`, `top_10.p`, `user_item_matrix.p`: Udacity files.
 
 **Dependencies**
 
@@ -69,10 +71,10 @@ However, this binary representation may not always capture the full spectrum of 
 **Clone repository** 
 
 ```
-git clonehttps://github.com/TheAnalyticCraft/IBM-Recommendation-Engine-Project.git
+git clone https://github.com/TheAnalyticCraft/IBM-Recommendation-Engine-Project.git
 ```
 
 ### Acknowledgements
 
-* [Udacity](https://www.udacity.com/) for offering an exceptional Experimental Testing and Recommendation Engine
-* [IBM](https://dataplatform.cloud.ibm.com) for providing the dataset essential for building a recommendation system
+* [Udacity](https://www.udacity.com/) for offering an exceptional Experimental Testing and Recommendation Engine.
+* [IBM](https://dataplatform.cloud.ibm.com) for providing the dataset essential for building a recommendation engine.
