@@ -10,7 +10,7 @@ This project is structured into separate sections, each representing a step in t
 - Collaborative Filtering: Recommendations are generated based on user similarity.
 - Content-Based Recommendations: Recommendations rely on content similarity between articles.
 
-A detailed walkthrough of the steps is described in the `Recommendations_with_IBM' jupyter notebook or HTML. Udacity provided an outline for which functions need to be written to perform the different tasks in this recommendation exercise, as shown in sections:
+A detailed walkthrough of the steps is described in the `Recommendations_with_IBM` jupyter notebook or HTML. Udacity provided an outline for which functions need to be written to perform the different tasks in this recommendation exercise, as shown in sections:
 
 - II. Rank-based  
 - III. User-User Collaborative - Filtering  
@@ -51,12 +51,13 @@ However, this binary representation may not always capture the full spectrum of 
 - `/data/articles_community.csv`: Catalog of articles.
 - `/data/user-item-interaction.csv`: User views of articles.
 
-**File Description**
+**Files Description**
 
 - `Recommendations_with_IBM.ipynb`: Jupyter notebook containing the Udacity exercises.
 - `Recommendations_with_IBM.html`: HTML version of the Jupyter notebook.
 - `recommender.py`: Builds the recommender class.
 - `recommender_functions.py`: Contains functions for recommender class.
+- `user_item_visualizations.png`: Visualization chart.
 - `project_test.py`: Contains grading functions. 
 - `top_5.p`, `top_10.p`, `user_item_matrix.p`: Udacity files.
 
