@@ -24,11 +24,13 @@ At the end of section IV, a demonstration of three combined approaches is presen
 
 To facilitate this process, a Python class named ArticleRecommender (contained in `recommender.py`) serves as a central hub for processing. It illustrates how different user scenarios are handled effectively. Additional functions from `recommender_functions.py` are imported to support these recommendations.
 
-In Section V, we delve into Matrix Factorization, specifically Singular Value Decomposition (SVD), to predict user-article interactions. SVD offers advantages in handling data sparsity and addressing the cold start problem, making it well-suited for scenarios with binary interactions (0 or 1), representing implicit ratings.
+In Section V, we explore Matrix Factorization, specifically Singular Value Decomposition (SVD), as a method to predict user-article interactions. SVD offers advantages in handling data sparsity and addressing the cold start problem, making it suitable for scenarios with binary interactions (0 or 1), representing implicit ratings.
 
-However, it's crucial to assess the quality of these predictions, as they significantly influence the accuracy of the similarity matrix. During evaluation, as the number of latent factors increases, SVD performs exceptionally well on the training data, indicating a strong fit. However, when applied to the test dataset, SVD's performance deteriorates, raising concerns about potential overfitting issues.
+However, it's crucial to evaluate the quality of these predictions, as they significantly influence the accuracy of the similarity matrix. During evaluation, as the number of latent factors increases, SVD performs exceptionally well on the training data, indicating a strong fit. However, when applied to the test dataset, SVD's performance deteriorates, raising concerns about potential overfitting issues.
 
-Addressing overfitting in SVD predictions requires further exploration and refinement.
+To address overfitting in SVD predictions and enhance the accuracy of recommendations, further exploration and refinement are needed. Typically, this involves conducting evaluations on historical data to fine-tune the model.
+
+In terms of live evaluation of recommendation engines, A/B testing or a variation of this methodology can be employed as a pilot trial to assess actual user behavior. The goal is to determine if the new recommendations provide a significant lift in user engagement (e.g., the percentage of viewed articles) compared to the existing solution. This experimental testing is followed by a thorough analysis, including Return on Investment (ROI), to assess the cost-effectiveness of the new recommendation system.
 
 ### About the Data
 
